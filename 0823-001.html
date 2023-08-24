@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>f</title>
+    <style>
+        * { 
+            box-sizing: border-box;
+        }
+        body { 
+            margin: 0;
+            background: #fff;
+        }
+        .navbar  { 
+            overflow: hidden;
+            background-color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .navbar a  { 
+            float: left;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .dropdown { 
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn { 
+            font-size: inherit;
+            border: none;
+            outline: none;
+            color: #fff;
+            padding: 14px 16px;
+            background: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .dropdown:hover, .dropbtn { 
+            background: red;
+        }
+        .dropdown-content { 
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            width: 100%;
+            left: 0;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0, 2);
+            z-index: 99;
+        }
+
+        .dropdown-content .header {
+            background: red;
+            padding: 16px;
+            color: #fff;
+
+        }
+
+        .dropdown:hover .dropdown-content { 
+            display: block;
+        }
+
+        table { 
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            border-spacing: 10px 50px;
+        }
+
+        td { 
+            border: 1px solid #ccc;
+        }
+        table { 
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        input, select { 
+            vertical-align: middle;
+        }
+
+    </style>
+    </head>
+    <body>
+        <body style="background-color:white;">
+
+            <div class="navbar">
+              <a href="#home">Home</a>
+              <a href="#news">News</a>
+              <div class="dropdown">
+                <button class="dropbtn">Dropdown 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <div class="header">
+                    <h2>Mega Menu</h2>
+                  </div>   
+                  <div class="row">
+                    <div class="column">
+                      <h3>Category 1</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="column">
+                      <h3>Category 2</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                    <div class="column">
+                      <h3>Category 3</h3>
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+
+            <table>
+                <td>
+                    <tr></tr>
+                </td>
+            </table>
+
+    </body>
+
+</html>
